@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laravel CRUD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-TDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#">Laravel CRUD</a>
+      </div>
+    </nav>
+    <div class="container mt-5">
+      <div class="row">
+        <h5><i class="fa-solid fa-square-plus"></i> Add New Product</h5>
+        <hr>
+        <nav class="my-3">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active">Add New Product</li>
+            </ol>
+        </nav>
+
+        <div class="col-md-8">
+            <form action="#" method="post">
+                <div class="row mb-3">
+                    <div class="col-md-12">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Enter Product Name">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="mrp" class="form-label">M.R.P</label>
+                        <input type="text" class="form-control" name="mrp" id="mrp" placeholder="Enter Product M.R.P">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="sellingprice" class="form-label">Selling Price</label>
+                        <input type="text" class="form-control" name="sellingprice" id="sellingprice" placeholder="Enter Selling Price">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-12">
+                        <label for="description" class="form-label" id="description">Description</label>
+                        <textarea name="description" id="description" class="form-control" style="resize: none; height: 150px;" placeholder="Enter Product Description"></textarea>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-12">
+                        <label for="productimg" class="form-label">Product Image</label>
+                        <input type="file" class="form-control" name="productimg" id="[productimg]">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-dark">Save Product</button>
+                    <button type="reset" class="btn btn-danger">Clear All</button>
+                </div>
+            </form>
+        </div>
+      </div>
+
+      <!--Container End-->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

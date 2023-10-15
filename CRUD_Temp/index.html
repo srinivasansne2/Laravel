@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laravel CRUD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-TDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#">Laravel CRUD</a>
+      </div>
+    </nav>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="d-flex justify-content-between">
+          <h5><i class="fa-solid fa-list"></i> Product Detial</h5>
+          <a href="create.html" class="btn btn-primary"><i class="fa-solid fa-cart-plus" style="color: #ffffff;"></i> New Product</a>
+        </div>
+
+        <div class="col-md-12 table-responsive mt-3">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>P.No</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>M.R.P</th>
+                <th>Selling Price</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <td>1.</td>
+              <td><img src="img/p1.png" style="width: 50px; height: 50px; object-fit: contain;" alt="Gold Ring"></td>
+              <td><a href="view.html">Gold Ring</a></td>
+              <td>$20</td>
+              <td>$15</td>
+              <td>
+                <a href="edit.html" class="btn btn-dark btn-sm"><i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i></a>
+                <a href="#" class="btn btn-danger btn-sm"><i class="fa-solid fa-trash"></i></a>
+              </td>
+            </tbody>
+          </table>
+        </div>
+        <!--Row End-->
+      </div>
+      <!--Container End-->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
